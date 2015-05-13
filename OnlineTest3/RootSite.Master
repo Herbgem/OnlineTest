@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RootSite.Master.cs" Inherits="OnlineTest3.Site1" %>
+<%@ Register Src="~/Horizontalmenu.ascx" TagPrefix="uc1" TagName="Horizontalmenu" %>
+<link href="CssStyle/Global.css" rel="stylesheet" />
+<link href="Content/bootstrap.min.css" rel="stylesheet" />
+<link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Online Test</title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header style="margin:20px">
+            <label style="padding:20px">O!Test</label>
+            <nav class="topMenu navbar navbar-inverse">
+                <uc1:Horizontalmenu runat="server" />
+            </nav>
+            
+        </header>
+                
+    </form>
+    <!-- Single button -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Action <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+</body>
+</html>
