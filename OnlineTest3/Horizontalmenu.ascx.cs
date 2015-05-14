@@ -11,10 +11,16 @@ namespace OnlineTest3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (Session["UserName"] != null)
             {
                 hlLogin.Visible = false;
                 hlRegister.Visible = false;
+                
+                if (Models.UserInfo.UserName == "admin")
+                {
+                    UserOPS.Visible = true;
+                }
             }
         }
     }

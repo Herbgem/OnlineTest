@@ -10,8 +10,9 @@
     <link href="CssStyle/Global.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.css" rel="stylesheet" />
     <link href="Content/bootstrap.css" rel="stylesheet" />
-    <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    
 
     <title>Online Test</title>
     <asp:ContentPlaceHolder ID="HeadRegion" runat="server" />
@@ -35,7 +36,9 @@
         
     <section id="Content" class="pageMarginLayout">
         <uc1:LeftSideBar runat="server" ID="LeftSideBar1" />
-        <asp:ContentPlaceHolder ID="BodyRegion" runat="server" />
+        <div style="display:block">
+            <asp:ContentPlaceHolder ID="BodyRegion" runat="server"/>
+        </div>
     </section>
 
 

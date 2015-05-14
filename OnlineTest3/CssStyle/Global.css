@@ -7,6 +7,24 @@
     padding:10px;
 }
 
+.container{
+    position:absolute;
+    width:100%;
+    display:block;
+    margin:0 auto;
+    text-align:center;
+}
+
+.box{
+    display:inline-block;
+
+}
+
+.horizontalCenter{
+    display:table;
+    margin:auto auto;
+}
+
 .pageMarginLayout{
     margin-left:100px;
     margin-right:100px;
@@ -20,17 +38,21 @@
 }
 
 .leftSideBarStyle{
+    z-index:1000;
     float:left;
 }
 
 .Grid {
+    float:none;
     background-color: #fff; 
-    margin: 5px 0 10px 0; 
+    margin-left:auto;
+    margin-right:auto;
     border: solid 1px #525252; 
     border-collapse:collapse; 
     font-family:Calibri; 
     color: #474747;
     text-align:center;
+    
 }
 
 .Grid td {
@@ -42,7 +64,9 @@
       color: #fff;
       background: #363670 url(Images/grid-header.png) repeat-x top;
       border-left: solid 1px #525252;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      text-align:center;
+}
 
 .Grid .alt {
       background: #fcfcfc url(Images/grid-alt.png) repeat-x top; }

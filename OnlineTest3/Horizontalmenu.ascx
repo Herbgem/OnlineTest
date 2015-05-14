@@ -11,7 +11,8 @@
             <li id="liLogin"><asp:HyperLink ID="hlLogin" runat="server" Text="Login" NavigateUrl="~/Login.aspx"/></li>
             <li id="liRegister"><asp:HyperLink ID="hlRegister" runat="server" Text="Register" NavigateUrl="~/Register.aspx"/></li>
             
-            <li class="dropdown">
+            
+            <li class="dropdown" id="UserOPS" runat="server" visible="false">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">User OPS <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#">View users' details</a></li>
@@ -23,6 +24,7 @@
                     <li><a href="#">One more separated link</a></li>
                 </ul>
             </li>
+            
 
             <li><asp:HyperLink ID="hlAboutUs" runat="server" Text="About Us" /></li>
         </ul>

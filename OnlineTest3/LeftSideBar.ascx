@@ -4,12 +4,14 @@
 <link href="Content/bootstrap-theme.css" rel="stylesheet" />
 <link href="CssStyle/Global.css" rel="stylesheet" />
 
-<asp:Panel id="SideBar" CssClass="borderStyle leftSideBarStyle" runat="server">
+<asp:Panel id="SideBar" CssClass="borderStyle leftSideBarStyle" runat="server" HorizontalAlign="Left" >
 
     <ul class="nav navbar-default">
         <li class="active"><asp:HyperLink ID="ViewUsersDetails" Text="View Users' Details" runat="server" NavigateUrl="~/UsersDetails.aspx" /></li>
-        <li><asp:HyperLink ID="HyperLink1" Text="View Test Results" runat="server" NavigateUrl="#" /></li>
+        <li><asp:HyperLink ID="HyperLink1" Text="View Test Results" runat="server" NavigateUrl="~/ViewTestResults.aspx" /></li>
     
     </ul>
+
+
 
 </asp:Panel>

@@ -69,6 +69,7 @@
     <Content Include="Register.aspx" />
     <Content Include="LeftSideBar.ascx" />
     <Content Include="UsersDetails.aspx" />
+    <Content Include="ViewTestResults.aspx" />
     <None Include="Models\UsersDb.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="UsersDetails.aspx.designer.cs">
       <DependentUpon>UsersDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTestResults.aspx.cs">
+      <DependentUpon>ViewTestResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTestResults.aspx.designer.cs">
+      <DependentUpon>ViewTestResults.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
