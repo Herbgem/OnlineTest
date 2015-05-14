@@ -7,15 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace OnlineTest3
 {
-    public partial class Horizontalmenu : System.Web.UI.UserControl
+    public partial class WebForm5 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserName"] != null)
-            {
-                hlLogin.Visible = false;
-                hlRegister.Visible = false;
-            }
+
+        }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

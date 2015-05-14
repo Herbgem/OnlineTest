@@ -1,40 +1,44 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RootSite.Master.cs" Inherits="OnlineTest3.Site1" %>
 <%@ Register Src="~/Horizontalmenu.ascx" TagPrefix="uc1" TagName="Horizontalmenu" %>
-<link href="CssStyle/Global.css" rel="stylesheet" />
-<link href="Content/bootstrap.min.css" rel="stylesheet" />
-<link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
-<script src="Scripts/jquery-1.9.1.min.js"></script>
-<script src="Scripts/bootstrap.min.js"></script>
+<%@ Register Src="~/LeftSideBar.ascx" TagPrefix="uc1" TagName="LeftSideBar" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="CssStyle/Global.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+
     <title>Online Test</title>
+    <asp:ContentPlaceHolder ID="HeadRegion" runat="server" />
     
 </head>
 <body>
-    <form id="form1" runat="server">
-        <header style="margin:20px">
-            <label style="padding:20px">O!Test</label>
-            <nav class="topMenu navbar navbar-inverse">
-                <uc1:Horizontalmenu runat="server" />
-            </nav>
+    
+    <section id="Header" class="pageMarginLayout">
+        <header>
+            <div>
+                <div>
+                    <label style="position:absolute; padding-left:10px; top:60px; font-size:300%; font-family:Impact, Charcoal, sans-serif;">O!Test</label>
+                </div>
+                <img src="ImgHeader2.jpg" style="height:150px; width:100%"/>
+                <uc1:Horizontalmenu ID="TopMenu" runat="server" />
+            </div>
+            
             
         </header>
-                
-    </form>
-    <!-- Single button -->
-            <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                Action <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </div>
+    </section>
+        
+    <section id="Content" class="pageMarginLayout">
+        <uc1:LeftSideBar runat="server" ID="LeftSideBar1" />
+        <asp:ContentPlaceHolder ID="BodyRegion" runat="server" />
+    </section>
+
+
+
 </body>
 </html>

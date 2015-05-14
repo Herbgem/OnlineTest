@@ -7,14 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace OnlineTest3
 {
-    public partial class Horizontalmenu : System.Web.UI.UserControl
+    public partial class WebUserControl1 : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserName"] != null)
+            if (Models.UserInfo.UserName != "admin")
             {
-                hlLogin.Visible = false;
-                hlRegister.Visible = false;
+                SideBar.Visible = false;
+                
             }
         }
     }

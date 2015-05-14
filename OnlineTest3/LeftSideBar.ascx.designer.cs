@@ -10,42 +10,33 @@
 namespace OnlineTest3 {
     
     
-    public partial class Site1 {
+    public partial class WebUserControl1 {
         
         /// <summary>
-        /// HeadRegion control.
+        /// SideBar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadRegion;
+        protected global::System.Web.UI.WebControls.Panel SideBar;
         
         /// <summary>
-        /// TopMenu control.
+        /// ViewUsersDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::OnlineTest3.Horizontalmenu TopMenu;
+        protected global::System.Web.UI.WebControls.HyperLink ViewUsersDetails;
         
         /// <summary>
-        /// LeftSideBar1 control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::OnlineTest3.WebUserControl1 LeftSideBar1;
-        
-        /// <summary>
-        /// BodyRegion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder BodyRegion;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }
