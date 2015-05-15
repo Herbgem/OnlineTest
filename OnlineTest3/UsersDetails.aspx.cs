@@ -48,5 +48,24 @@ namespace OnlineTest3
             gvUsers.DataSource = ds.Tables[ds.UserProfiles.TableName];
             gvUsers.DataBind();
         }
+
+        protected void HeaderChkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox cb = sender as CheckBox;
+            if (cb.Checked == true) 
+            {
+                foreach (GridViewRow vr in this.gvUsers.Rows)
+                {
+                    (vr.FindControl("chkbox") as CheckBox).Checked = true;
+                }
+            }
+            else
+            {
+                foreach (GridViewRow vr in this.gvUsers.Rows)
+                {
+                    (vr.FindControl("chkbox") as CheckBox).Checked = false;
+                }
+            }
+        }
     }
 }

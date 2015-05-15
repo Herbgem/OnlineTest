@@ -60,6 +60,7 @@
     <Content Include="ImgHeader.jpg" />
     <Content Include="ImgHeader2.jpg" />
     <Content Include="RootSite.Master" />
+    <Content Include="TestPaper.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Models\UsersDb.xsc">
@@ -70,6 +71,8 @@
     <Content Include="LeftSideBar.ascx" />
     <Content Include="UsersDetails.aspx" />
     <Content Include="ViewTestResults.aspx" />
+    <Content Include="UserTests.aspx" />
+    <Content Include="Subjects.aspx" />
     <None Include="Models\UsersDb.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -84,6 +87,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -144,6 +148,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TestPaper.aspx.cs">
+      <DependentUpon>TestPaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestPaper.aspx.designer.cs">
+      <DependentUpon>TestPaper.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -192,6 +203,20 @@
     </Compile>
     <Compile Include="ViewTestResults.aspx.designer.cs">
       <DependentUpon>ViewTestResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserTests.aspx.cs">
+      <DependentUpon>UserTests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserTests.aspx.designer.cs">
+      <DependentUpon>UserTests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subjects.aspx.cs">
+      <DependentUpon>Subjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subjects.aspx.designer.cs">
+      <DependentUpon>Subjects.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

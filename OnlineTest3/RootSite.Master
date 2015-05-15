@@ -35,6 +35,11 @@
     </section>
         
     <section id="Content" class="pageMarginLayout">
+        <div>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:SiteMapPath id="SiteMapPath" runat="server" />
+        </div>
+        
         <uc1:LeftSideBar runat="server" ID="LeftSideBar1" />
             <asp:ContentPlaceHolder ID="BodyRegion" runat="server"/>
 

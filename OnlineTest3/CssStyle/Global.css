@@ -8,8 +8,7 @@
 }
 
 .container{
-    overflow:hidden;
-    position:absolute;
+    position:relative;
     display:inline-block;
     text-align:center;
 }
@@ -37,7 +36,13 @@
 }
 
 .leftSideBarStyle{
+    position:relative;
+    margin-top:20px;
     display:inline-block;
+}
+
+.BtnInline{
+    display:inline;
 }
 
 .Grid {

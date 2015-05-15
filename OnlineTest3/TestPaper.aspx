@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RootSite.Master" AutoEventWireup="true" CodeBehind="ViewTestResults.aspx.cs" Inherits="OnlineTest3.WebForm7" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RootSite.Master" AutoEventWireup="true" CodeBehind="TestPaper.aspx.cs" Inherits="OnlineTest3.WebForm10" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadRegion" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BodyRegion" runat="server">
@@ -8,8 +8,6 @@
                       CssClass="Grid" AlternatingRowStyle-CssClass="alt"
                       PagerStyle-CssClass="pgr">
             </asp:GridView>
-            <br /><br />
-
         </form>
     </div>
 </asp:Content>

@@ -20,6 +20,7 @@ namespace OnlineTest3
                 if (Models.UserInfo.UserName == "admin")
                 {
                     UserOPS.Visible = true;
+                    TestOPS.Visible = true;
                 }
             }
         }

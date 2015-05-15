@@ -15,9 +15,21 @@
             <li class="dropdown" id="UserOPS" runat="server" visible="false">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">User OPS <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">View users' details</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="UsersDetails.aspx">View users' details</a></li>
+                    <li><a href="ViewTestResults.aspx">View test Results</a></li>
+                    <li><a href="UserTests.aspx">View user tests</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown" id="TestOPS" runat="server" visible="false">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Test OPS <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="Subjects.aspx">View users' details</a></li>
+                    <li><a href="TestPaper.aspx">View test Results</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Separated link</a></li>
                     <li class="divider"></li>
