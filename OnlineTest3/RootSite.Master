@@ -36,9 +36,8 @@
         
     <section id="Content" class="pageMarginLayout">
         <uc1:LeftSideBar runat="server" ID="LeftSideBar1" />
-        <div style="display:block">
             <asp:ContentPlaceHolder ID="BodyRegion" runat="server"/>
-        </div>
+
     </section>
 
 

@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RootSite.Master" AutoEventWireup="true" CodeBehind="UsersDetails.aspx.cs" Inherits="OnlineTest3.WebForm6" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RootSite.Master" AutoEventWireup="true" CodeBehind="ViewTestResults.aspx.cs" Inherits="OnlineTest3.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadRegion" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BodyRegion" runat="server">
@@ -17,11 +16,7 @@
                 </Columns>
             </asp:GridView>
             <br /><br />
-            <div class="box">
-                <asp:Button ID="btnDelete" Text="Delete" runat="server" onclick="btnDelete_Click"/>
 
-            </div>
         </form>
     </div>
 </asp:Content>
-

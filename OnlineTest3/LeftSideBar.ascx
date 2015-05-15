@@ -4,7 +4,7 @@
 <link href="Content/bootstrap-theme.css" rel="stylesheet" />
 <link href="CssStyle/Global.css" rel="stylesheet" />
 
-<asp:Panel id="SideBar" CssClass="borderStyle leftSideBarStyle" runat="server" HorizontalAlign="Left" >
+<asp:Panel id="SideBar" CssClass="borderStyle leftSideBarStyle" runat="server">
 
     <ul class="nav navbar-default">
         <li class="active"><asp:HyperLink ID="ViewUsersDetails" Text="View Users' Details" runat="server" NavigateUrl="~/UsersDetails.aspx" /></li>
